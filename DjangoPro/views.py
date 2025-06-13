@@ -13,6 +13,6 @@ def Index(request):
     data = Post.objects.all()
     return render(request,'index.html',{'data':data})
 
-def blog(request,idnum):
-    post = get_object_or_404(Post,id=idnum)
+def blog(request,slug):
+    post = get_object_or_404(Post,slug =slug)
     return render(request,'blog.html',{'post':post})

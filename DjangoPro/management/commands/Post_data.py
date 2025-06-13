@@ -4,7 +4,6 @@ from django.core.management.base import BaseCommand
 class Command(BaseCommand):
     help = "Started"    
     def handle(self, *args, **options):
-        Post.objects.all().delete()
         authors =['Santhosh','viswa']
 
         titles =['Automic Habits','The intelligent investor']      
