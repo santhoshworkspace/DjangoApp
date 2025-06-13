@@ -9,6 +9,7 @@
     </div>
     <h2><a class="article-title" href="{% url 'blogs' post.slug%}">{{ post.title }}</a></h2>
     <p class="article-content">{{ post.content }}</p>
+    <p class="article-content">Content related : {{ post.category }}</p>
   </div>
 </article>
     {% endfor %}
